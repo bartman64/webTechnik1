@@ -1,10 +1,10 @@
 .wrapper {
-	width: 501px;
+    width: 501px;
 }
 
 .steuerung {
     width: 150px;
-    float:left;
+    float: left;
 }
 
 .zweite_spalte {
@@ -17,15 +17,24 @@ img {
     height: 100%;
 }
 
+body {
+    background-color: #cecece;
+}
+
 footer {
-    background-color: #13c0ff;
+    background-color: #858585;
     color: white;
     font-family: Arial;
     border: thin solid #AAA;
     margin-top: 30px;
+    padding-left: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
-header{
+header {
     text-align: center;
     text-decoration: underline;
 }
