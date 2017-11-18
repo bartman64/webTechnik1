@@ -1,0 +1,50 @@
+body {
+    font-size: 16px;
+}
+
+.wrapper {
+    display: block;
+    min-width: unset;
+    max-width: unset;
+}
+
+nav {
+    display: block;
+    width: 100%;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    font-size: 2rem;
+}
+
+
+
+main {
+    display: block;
+    width: 100%;
+}
+
+aside {
+    display: none;
+}
+
+header {
+    font-size: 1.2rem;
+    min-width: unset;
+    max-width: unset;
+}
+
+footer {
+    font-size: 1.2rem;
+    min-width: unset;
+    max-width: unset;
+}
+
+#pattern {
+    width: 150px;
+    max-width: 40%;
+}

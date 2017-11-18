@@ -1,0 +1,40 @@
+body {
+    padding: 0;
+    border: solid red 2px;
+    font-size: 14px;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    display: table;
+    width: 100%;
+}
+
+main {
+    display: table-cell;
+    overflow: auto;
+    width: 60%;
+    padding: 4px;
+    border: solid gray 1px;
+}
+
+header {
+    height: 60px;
+    padding: 4px;
+    background: lightskyblue;
+}
+
+footer {
+    padding: 4px;
+    background: lightgrey;
+}
+
+#pattern {
+    float: left;
+    margin: 0 4px 4px 0;
+    width: 200px;
+    height: auto;
+}

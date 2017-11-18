@@ -1,15 +1,6 @@
 .wrapper {
-    width: 501px;
-}
-
-.steuerung {
-    width: 150px;
-    float: left;
-}
-
-.zweite_spalte {
-    margin-left: 200px;
-    width: 500px;
+    display: table;
+    width: 100%;
 }
 
 img {
@@ -19,22 +10,32 @@ img {
 
 body {
     background-color: #cecece;
+    padding: 0;
+    border: solid red 2px;
+    font-size: 14px;
 }
 
+body * {
+    box-sizing: border-box;
+}
+
+
 footer {
-    background-color: #858585;
-    color: white;
-    font-family: Arial;
-    border: thin solid #AAA;
-    margin-top: 30px;
-    padding-left: 20px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    padding: 4px;
+    background: lightgrey;
 }
 
 header {
-    text-align: center;
-    text-decoration: underline;
+    height: 60px;
+    padding: 4px;
+    background: lightskyblue;
 }
+
+main {
+    display: table-cell;
+    overflow: auto;
+    width: 60%;
+    padding: 4px;
+    border: solid gray 1px;
+}
+

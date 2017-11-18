@@ -2,39 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../res/css/navigation.css">
-    <link rel="stylesheet" href="../res/css/table.css">
     <link rel="stylesheet" href="../res/css/main.css">
-
+    <script language="javascript" type="text/javascript" src="../res/js/ausblenden.js"></script>
+    <script language="javascript" type="text/javascript" src="../res/js/login.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 720px)  and (orientation: portrait)"
+          href="../res/css/responsive_mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 720px)  and (orientation: portrait)"
+          href="../res/css/responsive_mobile.css">
     <title>Title</title>
 </head>
 <body>
 <header>
-    <h1>Most important heading here</h1>
+    Header
 </header>
 <div class="wrapper">
-    <div class="steuerung">
-        <nav>
-            <ul>
-                <li class="active"><a href="index.html">Index</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="info.html">Info</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <div class="zweite_spalte">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eleifend neque aliquet nisl laoreet,
-        condimentum efficitur quam malesuada. Donec cursus tellus vel iaculis rutrum. Ut eu nisl nulla. Phasellus quis
-        urna sem. Duis vel lorem at ex sagittis fringilla sed eget nisl. Aliquam lacinia, est et auctor gravida, enim
-        turpis egestas massa, et sagittis urna leo ac nisi. Aliquam nec enim luctus, porttitor dui non, varius libero.
-        Proin nec sapien est. Duis pellentesque ligula nulla, sed mollis ligula consequat nec. Nunc at pulvinar mi.
-        Aenean efficitur at ante id faucibus. In ornare et erat a pellentesque. Nunc aliquet blandit pulvinar.
-    </div>
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Index</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="info.html">Info</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eleifend neque aliquet nisl laoreet,
+            condimentum efficitur quam malesuada. Donec cursus tellus vel iaculis rutrum. Ut eu nisl nulla. Phasellus
+            quis
+            urna sem. Duis vel lorem at ex sagittis fringilla sed eget nisl. Aliquam lacinia, est et auctor gravida,
+            enim
+            turpis egestas massa, et sagittis urna leo ac nisi. Aliquam nec enim luctus, porttitor dui non, varius
+            libero.
+            Proin nec sapien est. Duis pellentesque ligula nulla, sed mollis ligula consequat nec. Nunc at pulvinar mi.
+            Aenean efficitur at ante id faucibus. In ornare et erat a pellentesque. Nunc aliquet blandit pulvinar.
+        </p>
+        <p>
+        <ul>
+            <li>
+                <a href="#" onclick="swap('hidemeta')">Link A</a>
+                <div id="hidemeta" style="display:none">Einzublendender Text A</div>
+            </li>
+            <li>
+                <a href="#" onclick="swap('hidemetb')">Link B</a>
+                <div id="hidemetb" style="display:none">Einzublendender Text B</div>
+            </li>
+            <li>
+                <a href="#" onclick="swap('hidemetc')">Link C</a>
+                <div id="hidemetc" style="display:none">Einzublendender Text C</div>
+            </li>
+        </ul>
+        </p>
+    </main>
 </div>
-
 <footer>
-  <p>Posted by: Sebastian Horvath</p>
+    Posted by: Sebastian Horvath
 </footer>
 </body>
 </html>
