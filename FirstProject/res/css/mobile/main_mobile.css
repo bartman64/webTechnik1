@@ -8,28 +8,9 @@ body {
     max-width: unset;
 }
 
-nav {
-    display: block;
-    width: 100%;
-}
-
-nav ul li {
-    float: left;
-}
-
-nav ul li a {
-    font-size: 2rem;
-}
-
-
-
 main {
     display: block;
     width: 100%;
-}
-
-aside {
-    display: none;
 }
 
 header {

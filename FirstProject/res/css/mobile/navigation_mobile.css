@@ -1,0 +1,12 @@
+nav {
+    display: block;
+    width: 100%;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    font-size: 2rem;
+}
