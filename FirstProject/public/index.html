@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <link rel="icon" href="../res/images/favicon.png">
+    <link rel="icon" href="../res/images/favicon.png">
     <link rel="stylesheet" href="../res/css/standard/navigation.css">
     <link rel="stylesheet" href="../res/css/standard/main.css">
+    <link rel="stylesheet" href="../res/css/standard/login.css">
 
     <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 720px)  and (orientation: portrait)"
           href="../res/css/mobile/main_mobilecss">
@@ -18,6 +19,12 @@
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 720px)  and (orientation: portrait)"
           href="../res/css/mobile/navigation_mobile.css">
 
+
+    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 720px)  and (orientation: portrait)"
+          href="../res/css/mobile/login_mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 720px)  and (orientation: portrait)"
+          href="../res/css/mobile/login_mobile.css">
+
     <script language="javascript" type="text/javascript" src="../res/js/ausblenden.js"></script>
     <script language="javascript" type="text/javascript" src="../res/js/login.js"></script>
 
@@ -25,7 +32,7 @@
 </head>
 <body>
 <header>
-    Header
+    <h1 id="test">Hello </h1>
 </header>
 <div class="wrapper">
     <nav>
@@ -33,7 +40,23 @@
             <li class="active"><a href="index.html">Index</a></li>
             <li><a href="news.html">News</a></li>
             <li><a href="info.html">Info</a></li>
+            <li>
+                <a href="#" onclick="swap('hidemeta')">Login</a>
+                <div id="hidemeta" style="display:none">
+                    <form onsubmit="return saveUsername()" action="index.html ">
+                        <div class="login_formular">
+                            <input class="login_input" type="text" id="userInput" required
+                                   placeholder="Enter your name"/>
+                            <button class="login_button" type="submit" onclick="saveUsername()">Submit</button>
+                            <p id="error_message"></p>
+                        </div>
+                    </form>
+                </div>
+            </li>
+
+
         </ul>
+
     </nav>
     <main>
         <p>
@@ -46,22 +69,6 @@
             libero.
             Proin nec sapien est. Duis pellentesque ligula nulla, sed mollis ligula consequat nec. Nunc at pulvinar mi.
             Aenean efficitur at ante id faucibus. In ornare et erat a pellentesque. Nunc aliquet blandit pulvinar.
-        </p>
-        <p>
-        <ul>
-            <li>
-                <a href="#" onclick="swap('hidemeta')">Link A</a>
-                <div id="hidemeta" style="display:none">Einzublendender Text A</div>
-            </li>
-            <li>
-                <a href="#" onclick="swap('hidemetb')">Link B</a>
-                <div id="hidemetb" style="display:none">Einzublendender Text B</div>
-            </li>
-            <li>
-                <a href="#" onclick="swap('hidemetc')">Link C</a>
-                <div id="hidemetc" style="display:none">Einzublendender Text C</div>
-            </li>
-        </ul>
         </p>
     </main>
 </div>

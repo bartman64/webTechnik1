@@ -6,7 +6,6 @@ nav {
     border: solid gray 1px;
 }
 
-
 nav ul {
     overflow: auto;
     margin: 0;
@@ -20,7 +19,8 @@ nav ul li {
 }
 
 nav ul li a {
-    padding: 2px;
+    font-family: Helvetica;
+    padding: 4px;
     margin: 2px;
     display: block;
     background-color: #0f77c2;

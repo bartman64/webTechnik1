@@ -19,7 +19,6 @@ body * {
     box-sizing: border-box;
 }
 
-
 footer {
     padding: 4px;
     background: lightgrey;
@@ -29,6 +28,7 @@ header {
     height: 60px;
     padding: 4px;
     background: lightskyblue;
+    font-family: Helvetica;
 }
 
 main {
@@ -37,5 +37,18 @@ main {
     width: 60%;
     padding: 4px;
     border: solid gray 1px;
+}
+
+button {
+    background-color: #0fa5ff;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 4px;
+    cursor: pointer;
 }
 

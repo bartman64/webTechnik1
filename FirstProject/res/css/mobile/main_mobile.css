@@ -14,18 +14,26 @@ main {
 }
 
 header {
-    font-size: 1.2rem;
+    font-size: 5vw;
     min-width: unset;
     max-width: unset;
+    min-height: 30vw;
 }
 
 footer {
-    font-size: 1.2rem;
+    font-size: 5vw;
     min-width: unset;
     max-width: unset;
+
 }
 
 #pattern {
     width: 150px;
     max-width: 40%;
+}
+
+button {
+    width:100%;
+    margin: 1px;
+    font-size: 10vw;
 }

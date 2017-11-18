@@ -2,14 +2,13 @@
     background-color: #0fa5ff;
     border: none;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 2px 4px;
     cursor: pointer;
-
 
 }
 
@@ -18,15 +17,14 @@
 }
 
 .login_input {
+    min-width: 20ch;
     width: 20%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    margin: 4px;
+    font-size: 12px;
+    padding: 12px 10px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
-.login_formular{
-    text-align: center;
-}

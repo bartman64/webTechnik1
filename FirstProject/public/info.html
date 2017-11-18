@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../res/css/standard/navigation.css">
     <link rel="stylesheet" href="../res/css/standard/main.css">
     <link rel="icon" href="../res/images/favicon.png">
+     <link rel="stylesheet" href="../res/css/standard/login.css">
 
     <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 720px)  and (orientation: portrait)"
           href="../res/css/mobile/main_mobilecss">
@@ -16,20 +17,44 @@
           href="../res/css/mobile/navigation_mobile.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 720px)  and (orientation: portrait)"
           href="../res/css/mobile/navigation_mobile.css">
+
+
+    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 720px)  and (orientation: portrait)"
+          href="../res/css/mobile/login_mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 720px)  and (orientation: portrait)"
+          href="../res/css/mobile/login_mobile.css">
+
+    <script language="javascript" type="text/javascript" src="../res/js/login.js"></script>
+    <script language="javascript" type="text/javascript" src="../res/js/ausblenden.js"></script>
     <title>Title</title>
 </head>
 <body>
 <header>
-    Most important heading here
+    <h1 id="test">Hello </h1>
 </header>
 <div class="wrapper">
-
     <nav>
         <ul>
-            <li><a href="index.html">Index</a></li>
+                 <li ><a href="index.html">Index</a></li>
             <li><a href="news.html">News</a></li>
             <li class="active"><a href="info.html">Info</a></li>
+            <li>
+                <a href="#" onclick="swap('hidemeta')">Login</a>
+                <div id="hidemeta" style="display:none">
+                    <form onsubmit="return saveUsername()" action="info.html ">
+                        <div class="login_formular">
+                            <input class="login_input" type="text" id="userInput" required
+                                   placeholder="Enter your name"/>
+                            <button class="login_button" type="submit" onclick="saveUsername()">Submit</button>
+                            <p id="error_message"></p>
+                        </div>
+                    </form>
+                </div>
+            </li>
+
+
         </ul>
+
     </nav>
     <main>
         <h2>main</h2>
