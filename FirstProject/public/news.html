@@ -10,34 +10,27 @@
     <link rel="stylesheet" href="../res/css/standard/main.css">
     <link rel="stylesheet" href="../res/css/standard/login.css">
 
-    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 720px)  and (orientation: portrait)"
-          href="../res/css/mobile/main_mobilecss">
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 720px)  and (orientation: portrait)"
           href="../res/css/mobile/main_mobile.css">
 
-    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 720px)  and (orientation: portrait)"
-          href="../res/css/mobile/navigation_mobile.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 720px)  and (orientation: portrait)"
           href="../res/css/mobile/navigation_mobile.css">
 
-    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 720px)  and (orientation: portrait)"
-          href="../res/css/mobile/table_mobile.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 720px)  and (orientation: portrait)"
           href="../res/css/mobile/table_mobile.css">
 
-    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 720px)  and (orientation: portrait)"
-          href="../res/css/mobile/login_mobile.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 720px)  and (orientation: portrait)"
           href="../res/css/mobile/login_mobile.css">
 
-    <script language="javascript" type="text/javascript" src="../res/js/login.js"></script>
-    <script language="javascript" type="text/javascript" src="../res/js/ausblenden.js"></script>
-      <script language="javascript" type="text/javascript" src="../res/js/sorting.js"></script>
+
+    <script type="text/javascript" src="../res/js/login.js"></script>
+    <script type="text/javascript" src="../res/js/ausblenden.js"></script>
+    <script type="text/javascript" src="../res/js/sorting.js"></script>
     <title>Title</title>
 </head>
 <body>
 <header>
-    <h1 id="test">Hello </h1>
+    <h1 id="test"> Hello</h1>
 </header>
 <div class="wrapper">
     <nav>
@@ -50,8 +43,8 @@
                 <a class="login_open_button" href="#" onclick="swap('hidemeta')">Login</a>
                 <div id="hidemeta" style="display:none">
                     <form onsubmit="return saveUsername()" action="news.html ">
-                        <div class="login_formular">
-                            <input class="login_input" type="text" id="userInput" required
+                        <div>
+                            <input class="login_input" type="text" id="userInput"
                                    placeholder="Enter your name"/>
                             <button class="login_button" type="submit" onclick="saveUsername()">Submit</button>
                             <p id="error_message"></p>
@@ -102,7 +95,7 @@
                 <td>Canada</td>
             </tr>
         </table>
-          <p>
+        <p>
             <button onclick="sortTable()">Sort</button>
         </p>
     </main>
