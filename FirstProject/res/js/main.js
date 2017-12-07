@@ -1,3 +1,8 @@
+/**
+ * This function takes the input form the input
+ * field and saves it in the local storage.
+ * @returns {boolean}
+ */
 function saveUsername() {
     //Getting the username from the input field
     var username = document.getElementById('userInput').value;
@@ -13,9 +18,14 @@ function saveUsername() {
         localStorage.setItem("text", username);
         window.location.reload();
     }
+    //Clears the input field
     document.getElementById('userInput').value = "";
 }
 
+/**
+ * This function loads the username from the local storage
+ * and sets it to html elements.
+ */
 window.onload = function () {
     //Get the username from the localStorage
     var username = localStorage.getItem("text");
@@ -25,7 +35,7 @@ window.onload = function () {
     if (username !== null) {
         message = "Hallo " + username;
     }
-
+    //
     for (var i = 0; i < 7; i++) {
         if (document.getElementById("test" + i) !== null) {
             if (i === 0) {
@@ -35,9 +45,12 @@ window.onload = function () {
             }
         }
     }
-}
+};
 
-
+/**
+ * This function handles the fade in / fade out feature
+ * @param id The id from the html element which changes visibility
+ */
 function swap(id) {
     if (document.getElementById(id).style.display === "none") {
         document.getElementById(id).style.display = "block";
@@ -47,7 +60,17 @@ function swap(id) {
     }
 }
 
+/**
+ * This function clears the local storage.
+ */
 function logout() {
     localStorage.clear();
     window.location.reload();
+}
+
+/**
+ * Return to the previous.
+ */
+function goBack() {
+    window.history.back();
 }
