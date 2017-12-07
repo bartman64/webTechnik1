@@ -37,17 +37,18 @@
             <li><a href="Table.html">News</a></li>
             <li class="active"><a href="MyThreads.html">My News</a></li>
             <li>
-                <a class="login_open_button" href="#" onclick="swap('hide')">Login</a>
-                <div id="hide" style="display:none">
-                    <div>
-                        <input class="login_input" type="text" id="userInput"
-                               placeholder="Enter your name"/>
-                        <button class="login_button" onclick="saveUsername()">Submit</button>
-                        <button class="login_button" onclick="logout()">Logout</button>
-                        <p id="error_message"></p>
-                    </div>
-                </div>
+                <a href="#" onclick="swap('hide')">Login</a>
             </li>
+            <div id="hide">
+                <div>
+                    <input type="text" id="userInput"
+                           placeholder="Enter your name"/>
+                    <button onclick="saveUsername()">Submit</button>
+                    <button onclick="logout()">Logout</button>
+                    <p id="error_message"></p>
+                </div>
+            </div>
+
         </ul>
     </nav>
     <main>
@@ -67,14 +68,16 @@
                 <td id="test1">User123</td>
             </tr>
             <tr>
-                <td>Bridge Constructor Portal Leak</td>
+                <td><a class="thread_link" href="Example_Thread.html">Bridge Constructor Portal Leak</a></td>
                 <td>2</td>
                 <td>9</td>
                 <td id="test2">User123</td>
             </tr>
             <tr>
                 <td>
-                    The Switch Ruined Steam Sales For Me
+                    <a class="thread_link" href="Example_Thread.html">
+                        The Switch Ruined Steam Sales For Me
+                    </a>
                 </td>
                 <td>3</td>
                 <td>8</td>

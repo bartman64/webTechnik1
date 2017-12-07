@@ -34,13 +34,13 @@
             <li><a href="Table.html">News</a></li>
             <li><a href="MyThreads.html">My News</a></li>
             <li>
-                <a class="login_open_button" href="#" onclick="swap('hide')">Login</a>
-                <div id="hide" style="display:none">
+                <a  href="#" onclick="swap('hide')">Login</a>
+                <div id="hide">
                     <div>
-                        <input class="login_input" type="text" id="userInput"
+                        <input  type="text" id="userInput"
                                placeholder="Enter your name"/>
-                        <button class="login_button" onclick="saveUsername()">Submit</button>
-                        <button class="login_button" onclick="logout()">Logout</button>
+                        <button onclick="saveUsername()">Submit</button>
+                        <button onclick="logout()">Logout</button>
                         <p id="error_message"></p>
                     </div>
                 </div>

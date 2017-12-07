@@ -11,7 +11,8 @@ function saveUsername() {
     var re = new RegExp("^[a-zA-Z]+$");
     if (!re.test(username)) {
         //Displaying an error message
-        document.getElementById("error_message").innerHTML = "Input not valid: Only letters allowed";
+        document.getElementById("error_message").innerHTML =
+            "Input not valid: Only letters allowed";
         return false;
     } else {
         //Save the username in the localStorage
@@ -53,7 +54,7 @@ window.onload = function () {
  */
 function swap(id) {
     if (document.getElementById(id).style.display === "none") {
-        document.getElementById(id).style.display = "block";
+        document.getElementById(id).style.display = "inline-grid";
     }
     else {
         document.getElementById(id).style.display = "none";

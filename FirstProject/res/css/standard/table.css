@@ -25,4 +25,10 @@ td:first-child {
     font-weight: bold;
 }
 
+.thread_link {
+    text-decoration: none;
+}
+.thread_link:hover{
+    font-size: 1.1em;
+}
 
