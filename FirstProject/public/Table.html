@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../res/css/standard/navigation.css">
-    <link rel="stylesheet" href="../res/css/standard/main.css">
-    <link rel="stylesheet" href="../res/css/standard/table.css">
-    <link rel="icon" href="../res/images/favicon.png">
 
+    <link rel="icon" href="../res/images/favicon.png">
+    <link rel="stylesheet" href="../res/css/standard/navigation.css">
+    <link rel="stylesheet" href="../res/css/standard/table.css">
+    <link rel="stylesheet" href="../res/css/standard/main.css">
 
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 720px)  and (orientation: portrait)"
           href="../res/css/mobile/main_mobile.css">
@@ -34,8 +34,8 @@
     <nav>
         <ul>
             <li><a href="index.html">Index</a></li>
-            <li><a href="Table.html">News</a></li>
-            <li class="active"><a href="info.html">My News</a></li>
+            <li class="active"><a href="Table.html">News</a></li>
+            <li><a href="info.html">My News</a></li>
             <li>
                 <a class="login_open_button" href="#" onclick="swap('hide')">Login</a>
                 <div id="hide" style="display:none">
@@ -48,6 +48,8 @@
                     </div>
                 </div>
             </li>
+
+
         </ul>
     </nav>
     <main>
@@ -60,36 +62,71 @@
                 <th>Created by</th>
             </tr>
             <tr>
-                <td><a class="thread_link" href="Example_Thread.html">Xenoblade Chronicles 2 Review Thread</a>
-                </td>
+                <td><a class="thread_link" href="Example_Thread.html">Xenoblade Chronicles 2 Review Thread</a></td>
                 <td>9</td>
                 <td>100</td>
-                <td id="test1">User123</td>
+                <td id="test4"></td>
+            </tr>
+            <tr>
+                <td>Media Create Sales: Week 47, 2017 (Nov 20 - Nov 26)</td>
+                <td>2</td>
+                <td>9</td>
+                <td>Stefan</td>
+            </tr>
+            <tr>
+                <td>
+                    The X1X makes the PlayStation 4 Pro feel like a half-measure (Polygon/Opinion)
+                </td>
+                <td>3</td>
+                <td>8</td>
+                <td>User1234</td>
+            </tr>
+            <tr>
+                <td>We need to get better at discussing diversity and representation issues</td>
+                <td>4</td>
+                <td>7</td>
+                <td>Alex</td>
+            </tr>
+            <tr>
+                <td>
+                    "Going all digital" seems like a bizarre practice to me.
+                </td>
+                <td>5</td>
+                <td>6</td>
+                <td>Filip</td>
+            </tr>
+            <tr>
+                <td class="title">Your gaming monkey paw scenarios</td>
+                <td>5</td>
+                <td>5</td>
+                <td>Adrian</td>
             </tr>
             <tr>
                 <td>Bridge Constructor Portal Leak</td>
-                <td>2</td>
-                <td>9</td>
-                <td id="test2">User123</td>
+                <td>23</td>
+                <td>54</td>
+                <td id="test5">User123</td>
             </tr>
             <tr>
                 <td>
                     The Switch Ruined Steam Sales For Me
                 </td>
-                <td>3</td>
-                <td>8</td>
-                <td id="test3">User123</td>
+                <td>13</td>
+                <td>22</td>
+                <td id="test6">User123</td>
             </tr>
         </table>
-
         <p>
             <button onclick="sortTable(1)">Sort Replies</button>
             <button onclick="sortTable(2)">Sort Views</button>
         </p>
+
     </main>
 </div>
+
 <footer>
-    <p>Posted by: Sebastian Horvath</p>
+    Posted by: Sebastian Horvath
 </footer>
+
 </body>
 </html>

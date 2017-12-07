@@ -1,9 +1,8 @@
 nav {
     display: table-cell;
-    width: 20%;
+    width: 15%;
     padding: 4px;
-    background: #858585;
-    border: solid gray 1px;
+    background: #9f9f9f;
 }
 
 nav ul {

@@ -1,3 +1,11 @@
 td, th {
-    font-size: 5vw;
+    font-size: 3vw;
+}
+
+table td:last-child {
+    display: none
+}
+
+table th:last-child {
+    display: none
 }

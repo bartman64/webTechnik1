@@ -29,25 +29,13 @@
 </header>
 <div class="wrapper">
     <nav>
-        <ul>
-            <li class="active"><a href="index.html">Index</a></li>
-            <li><a href="Table.html">News</a></li>
-            <li><a href="info.html">My News</a></li>
-            <li>
-                <a class="login_open_button" href="#" onclick="swap('hide')">Login</a>
-                <div id="hide" style="display:none">
-                    <div>
-                        <input class="login_input" type="text" id="userInput"
-                               placeholder="Enter your name"/>
-                        <button class="login_button" onclick="saveUsername()">Submit</button>
-                        <button class="login_button" onclick="logout()">Logout</button>
-                        <p id="error_message"></p>
-                    </div>
-                </div>
-            </li>
-        </ul>
+        <button onclick="goBack()">Back</button>
+        <script>function goBack(){
+            window.history.back();
+        }</script>
     </nav>
     <main>
+        <h2>Xenoblade Chronicles 2 Review Thread</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eleifend neque aliquet nisl laoreet,
             condimentum efficitur quam malesuada. Donec cursus tellus vel iaculis rutrum. Ut eu nisl nulla. Phasellus
@@ -59,6 +47,7 @@
             Proin nec sapien est. Duis pellentesque ligula nulla, sed mollis ligula consequat nec. Nunc at pulvinar mi.
             Aenean efficitur at ante id faucibus. In ornare et erat a pellentesque. Nunc aliquet blandit pulvinar.
         </p>
+        <img src="../res/images/medieval.JPG" alt="Medieval">
     </main>
 </div>
 <footer>

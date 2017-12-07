@@ -2,16 +2,27 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    background-color: #FFFFFF;
+    margin-bottom: 50px;
+
+}
+
+.table_head {
+    font-size: 1vw;
+    background-color: #858585;
+    border: 1px solid cornflowerblue;
+    color: #ffffff
 }
 
 td, th {
-    border: 1px solid #13c0ff;
+    border-bottom: 1px solid #9f9f9f;
+    border-right: none;
     text-align: left;
     padding: 8px;
-    font-size: 2vw;
+
 }
 
-tr:nth-child(even) {
-    background-color: #0fa5ff;
+td:first-child {
+    font-weight: bold;
 }
+
+

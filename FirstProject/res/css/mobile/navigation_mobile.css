@@ -1,6 +1,7 @@
 nav {
     display: block;
     width: 100%;
+
 }
 
 nav ul li {
@@ -8,5 +9,5 @@ nav ul li {
 }
 
 nav ul li a {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
