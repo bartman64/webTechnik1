@@ -4,8 +4,7 @@
 }
 
 img {
-    width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 body {
@@ -54,8 +53,9 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-       margin-top: 5px;
+    margin-top: 5px;
     cursor: pointer;
+    width: 48%;
 }
 
 button:hover {
@@ -73,23 +73,10 @@ h1 {
 
 }
 
-img {
-    height: 100%;
-}
+
 
 h2 {
     font-family: Verdana, sans-serif;
-}
-
-input {
-    min-width: 20ch;
-    width: 20%;
-    font-size: 12px;
-    padding: 8px 10px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
 }
 
 p {

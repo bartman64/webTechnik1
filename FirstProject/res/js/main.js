@@ -17,6 +17,8 @@ function saveUsername() {
     } else {
         //Save the username in the localStorage
         localStorage.setItem("text", username);
+        document.getElementById("hide_threads").style.display = "block";
+
         window.location.reload();
     }
     //Clears the input field
@@ -35,9 +37,15 @@ window.onload = function () {
 
     if (username !== null) {
         message = "Hallo " + username;
+        if (document.getElementById("hide_header") !== null) {
+            document.getElementById("hide_header").style.display = "none";
+        }
+    } else if (document.getElementById("hide_header") !== null && document.getElementById("hide_threads") !== null) {
+        document.getElementById("hide_threads").style.display = "none";
+        document.getElementById("hide_header").style.display = "block";
     }
-    //
-    for (var i = 0; i < 7; i++) {
+    var numberOfNameDisplays = 4;
+    for (var i = 0; i < numberOfNameDisplays; i++) {
         if (document.getElementById("test" + i) !== null) {
             if (i === 0) {
                 document.getElementById("test" + i).innerHTML = message;
@@ -46,7 +54,8 @@ window.onload = function () {
             }
         }
     }
-};
+}
+;
 
 /**
  * This function handles the fade in / fade out feature
