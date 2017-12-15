@@ -8,18 +8,20 @@ function saveUsername() {
     var username = document.getElementById('userInput').value;
 
     //Regex which test if the string only contains letters
-    var re = new RegExp("^[a-zA-Z]+$");
+    var re = new RegExp("^[a-zA-ZäöüÄÖÜ]+$");
     if (!re.test(username)) {
         //Displaying an error message
         document.getElementById("error_message").innerHTML =
             "Input not valid: Only letters allowed";
-        return false;
+
     } else {
         //Save the username in the localStorage
         localStorage.setItem("text", username);
-        document.getElementById("hide_threads").style.display = "block";
-
         window.location.reload();
+        //show personal threads
+        if(document.getElementById("hide_threads") !== null) {
+            document.getElementById("hide_threads").style.display = "block";
+        }
     }
     //Clears the input field
     document.getElementById('userInput').value = "";
@@ -37,6 +39,7 @@ window.onload = function () {
 
     if (username !== null) {
         message = "Hallo " + username;
+         //hide not logged in message
         if (document.getElementById("hide_header") !== null) {
             document.getElementById("hide_header").style.display = "none";
         }
@@ -45,6 +48,7 @@ window.onload = function () {
         document.getElementById("hide_header").style.display = "block";
     }
     var numberOfNameDisplays = 4;
+    //Set the "created by" field to the login username
     for (var i = 0; i < numberOfNameDisplays; i++) {
         if (document.getElementById("test" + i) !== null) {
             if (i === 0) {
@@ -62,8 +66,8 @@ window.onload = function () {
  * @param id The id from the html element which changes visibility
  */
 function swap(id) {
-    if (document.getElementById(id).style.display === "none") {
-        document.getElementById(id).style.display = "inline-grid";
+    if (document.getElementById(id).style.display !== "block") {
+        document.getElementById(id).style.display = "block";
     }
     else {
         document.getElementById(id).style.display = "none";

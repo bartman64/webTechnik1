@@ -41,7 +41,6 @@ nav ul li.active a {
 }
 
 input {
-    min-width: 20ch;
     width: 100%;
     font-size: 12px;
     padding: 8px 10px;
@@ -49,4 +48,5 @@ input {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    min-width: 20ch;
 }
